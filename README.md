@@ -1,16 +1,16 @@
-# i18n
+i18n
+===
 
 [<i>v. 0.1.0</i>]
 
 Basic internationalization library in ActionScript.
 
-## Usage
+# Usage
 
 Construct a box:
 
 ```as
 import i18n.*
-
 const box = new I18nBox
 ```
 
@@ -28,7 +28,7 @@ en.map({
 trace(en.get('tm-action'))
 ```
 
-### Array mapping
+## Array mapping
 
 The last example assigned strings dinamically, certainly inefficient. Arrays are supported. Let's define an enum:
 
@@ -57,7 +57,7 @@ en.arraySet(appStringsId, new <String> [
 trace(en.arrayGet(appStringsId, AppString.FILE))
 ```
 
-### Late fetch
+## Late fetch
 
 Wish to load strings only when needed? If so, you might use the condition:
 
@@ -67,11 +67,11 @@ const loaded = group.arrayHas(enumId)
 
 Desire to flush a group? Write `group.clear()`.
 
-### Facilities
+## Facilities
 
-i18n is more about string mapping, but extra functionality is found.
+i18n is all about mapping, though extra functionality is found.
 
-You can add fallback languages by calling `group.fallback(g)`.
+- You can add fallback languages by calling `group.fallback(g)`.
 
 To-add:
 
