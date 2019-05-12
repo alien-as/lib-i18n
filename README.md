@@ -1,7 +1,7 @@
 i18n
 ===
 
-![](https://img.shields.io/badge/astro-1.0.0-green.svg)
+![](https://img.shields.io/badge/astro-0.1.0-green.svg)
 
 Basic internationalization library in ActionScript.
 
