@@ -1,0 +1,4 @@
+acompc\
+    --include-sources=src\
+    --library-path=build/swcs\
+    -o build/i18n.swc
